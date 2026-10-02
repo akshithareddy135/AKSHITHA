@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nagulapati Akshitha Reddy - Computer Science Engineer, Full-Stack Developer, and Security & Cloud Enthusiast.">
+    <meta name="keywords" content="Nagulapati Akshitha Reddy, Software Engineer, Java, Python, Web Development, AWS, Cybersecurity, Portfolio">
+    <meta name="author" content="Nagulapati Akshitha Reddy">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Nagulapati Akshitha Reddy | Software Engineering Portfolio">
+    <meta property="og:description" content="Computer Science Engineer with expertise in Java, Python, AWS, and Web Technologies. Explore projects, skills, and certifications.">
+    <meta property="og:type" content="website">
+
+    <title>Nagulapati Akshitha Reddy | Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <nav class="navbar container">
+            <a href="#" class="brand-logo" aria-label="Home Page">
+                <span class="monogram">&lt;AR/&gt;</span>
+                <span class="brand-name">Akshitha Reddy</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#highlights" class="nav-link">Highlights</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta-mobile">
+                    <a href="assets/resume.pdf" class="btn btn-outline" download="Nagulapati_Akshitha_Reddy_Resume.pdf">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" class="btn btn-primary btn-sm nav-resume-btn" download="Nagulapati_Akshitha_Reddy_Resume.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </a>
+                <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-indicator"></span> Available for Engineering Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Nagulapati Akshitha Reddy</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Computer Science & Engineering Graduate</h2>
+                    <p class="hero-description">
+                        Building efficient, scalable, and user-focused software solutions. Passionate about Java, Python, Web Engineering, AWS Cloud Infrastructure, and Cyber Security.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                        <span class="meta-item"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (9.54 CGPA)</span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-code"></i> View Projects
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn-outline" download="Nagulapati_Akshitha_Reddy_Resume.pdf">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:akshithareddy132@gmail.com" aria-label="Email Direct">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+916301108114" aria-label="Phone Direct">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card-visual">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">developer_profile.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Nagulapati Akshitha Reddy"</span>,
+  <span class="code-key">degree</span>: <span class="code-str">"B.Tech in CSE"</span>,
+  <span class="code-key">cgpa</span>: <span class="code-num">9.54</span>,
+  <span class="code-key">coreTech</span>: [<span class="code-str">"Java"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"MySQL"</span>, <span class="code-str">"Flask"</span>],
+  <span class="code-key">cloudCert</span>: <span class="code-str">"AWS Certified Cloud Practitioner"</span>,
+  <span class="code-key">redHatCert</span>: <span class="code-str">"Enterprise Application Developer"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"Hyderabad, IN"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// GET TO KNOW ME</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-bio-card">
+                        <div class="bio-icon"><i class="fa-solid fa-user-gear"></i></div>
+                        <h3>Professional Profile</h3>
+                        <p>
+                            Computer Science and Engineering graduate with strong programming skills in Java and Python and a solid foundation in software engineering, databases, and web technologies. Experienced in building software applications through academic projects and committed to developing efficient, scalable, and user-focused solutions in a collaborative environment.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="stat-number">9.54</div>
+                            <div class="stat-label">B.Tech CGPA</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Global Certifications</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">End-to-End Projects</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Core Tech Domains</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// TECHNICAL CAPABILITIES</span>
+                    <h2 class="section-title">Skills & Knowledge</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming & Web</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag tag-highlight">Java</span>
+                            <span class="tag tag-highlight">Python</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Databases & Cloud</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag tag-highlight">MySQL</span>
+                            <span class="tag">AWS (EC2)</span>
+                            <span class="tag">AWS (IAM)</span>
+                            <span class="tag">AWS (S3)</span>
+                            <span class="tag">JDBC</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>Core CS & Software Eng</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag">Data Structures & Algorithms</span>
+                            <span class="tag">OOP Principles</span>
+                            <span class="tag">DBMS</span>
+                            <span class="tag">Operating Systems</span>
+                            <span class="tag">Computer Networks</span>
+                            <span class="tag">SDLC & Agile</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h3>Cybersecurity & AI</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag tag-highlight">Linux</span>
+                            <span class="tag">SSH Authentication</span>
+                            <span class="tag">Log Analysis</span>
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h3>Tools & Development</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">DeepFace</span>
+                            <span class="tag">Software Testing & Debugging</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-comments"></i>
+                            <h3>Soft Skills & Competencies</h3>
+                        </div>
+                        <div class="tag-cloud">
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Analytical Thinking</span>
+                            <span class="tag">Team Collaboration</span>
+                            <span class="tag">Communication Skills</span>
+                            <span class="tag">Adaptability</span>
+                            <span class="tag">Quick Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section" id="experience">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// ACADEMIC BACKGROUND</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
+                                    <span class="timeline-org">Koneru Lakshmaiah University</span>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jul 2022 – May 2026</span>
+                            </div>
+                            <div class="timeline-badge-container">
+                                <span class="badge badge-accent">CGPA: 9.54 / 10</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Specialized in core computer science, software engineering practices, cloud computing infrastructure, database design, and object-oriented paradigms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Intermediate Education</h3>
+                                    <span class="timeline-org">NTR Junior College</span>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2020 – 2022</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Rigorous foundation in Mathematics, Physics, and Chemistry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Secondary -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Secondary Education</h3>
+                                    <span class="timeline-org">NTR Model School</span>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2019 – 2020</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Completed secondary school certification with academic distinction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section cert-section" id="certifications">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// CREDENTIALS</span>
+                    <h2 class="section-title">Professional Certifications</h2>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon-box">
+                            <i class="fa-brands fa-aws"></i>
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-issuer">Amazon Web Services</span>
+                            <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
+                            <p class="cert-desc">Validates foundational knowledge of cloud concepts, security, architecture, compute, and S3/EC2/IAM services.</p>
+                            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Industry Verified</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon-box">
+                            <i class="fa-brands fa-redhat"></i>
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-issuer">Red Hat</span>
+                            <h3 class="cert-name">Red Hat Certified Enterprise Application Developer</h3>
+                            <p class="cert-desc">Demonstrates proficiency in creating, deploying, and maintaining enterprise Java software applications on modern platforms.</p>
+                            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Industry Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// PORTFOLIO OF WORK</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type"><i class="fa-solid fa-shield-halved"></i> Security & Systems</div>
+                            <h3 class="project-title">SSH Sentinel - Real-Time SSH Attack Detection System</h3>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullet-list">
+                                <li>Developed a Python-based log analysis engine to detect SSH brute-force attacks by parsing Linux authentication logs.</li>
+                                <li>Processed hundreds of login events to identify repeated failed login attempts and suspicious IP address patterns.</li>
+                                <li>Integrated IP geolocation enrichment and automated CSV reporting for attack analysis and security monitoring.</li>
+                                <li>Built an interactive Flask dashboard to visualize attacker origins, login trends, and attack statistics.</li>
+                                <li>Improved server security by enforcing SSH key-based authentication and disabling password-based logins.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack-pills">
+                                <span>Python</span>
+                                <span>Linux</span>
+                                <span>Flask</span>
+                                <span>SSH</span>
+                                <span>Log Analysis</span>
+                                <span>Geolocation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type"><i class="fa-solid fa-brain"></i> AI & Web Application</div>
+                            <h3 class="project-title">Emotion-Based Music Player</h3>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullet-list">
+                                <li>Developed an AI-powered music recommendation system using Python, Flask, OpenCV, and DeepFace.</li>
+                                <li>Implemented facial emotion recognition to recommend music based on users' emotions.</li>
+                                <li>Built a responsive web application using HTML, CSS, JavaScript, and Flask.</li>
+                                <li>Integrated the emotion detection module with the frontend to automate music recommendations.</li>
+                                <li>Performed functional testing and optimized application performance for improved user experience.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack-pills">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>OpenCV</span>
+                                <span>DeepFace</span>
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type"><i class="fa-solid fa-boxes-stacked"></i> Enterprise Database Application</div>
+                            <h3 class="project-title">Inventory Management System</h3>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullet-list">
+                                <li>Developed a Java-based Inventory Management System to manage product inventory, suppliers, and stock records.</li>
+                                <li>Implemented CRUD operations using Java, JDBC, and MySQL for efficient inventory management.</li>
+                                <li>Designed a relational database with optimized SQL queries for improved data retrieval and storage.</li>
+                                <li>Integrated low-stock alerts, product search, and inventory update functionalities.</li>
+                                <li>Applied Object-Oriented Programming principles and exception handling to develop a reliable application.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack-pills">
+                                <span>Java</span>
+                                <span>JDBC</span>
+                                <span>MySQL</span>
+                                <span>OOP</span>
+                                <span>SQL Optimization</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights / Achievements Section -->
+        <section class="section highlights-section" id="highlights">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// STANDOUT ACCOMPLISHMENTS</span>
+                    <h2 class="section-title">Key Career Highlights</h2>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-num">01</div>
+                        <div class="highlight-content">
+                            <h3>Academic Excellence</h3>
+                            <p>Maintained an exceptional <strong>9.54 / 10 CGPA</strong> during B.Tech in Computer Science and Engineering at Koneru Lakshmaiah University.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-num">02</div>
+                        <div class="highlight-content">
+                            <h3>Dual Global Certifications</h3>
+                            <p>Earned prestigious certifications from industry leaders: <strong>AWS Certified Cloud Practitioner</strong> and <strong>Red Hat Certified Enterprise Application Developer</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-num">03</div>
+                        <div class="highlight-content">
+                            <h3>Full-Stack Security & AI Systems</h3>
+                            <p>Engineered end-to-end applications spanning AI computer vision (DeepFace), secure log analysis/SSH hardening, and robust enterprise database architectures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">// CONNECT WITH ME</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info-panel">
+                        <h3>Let's discuss opportunities or collaborations</h3>
+                        <p>I am actively seeking software engineering roles where I can contribute my skills in Java, Python, Web Development, and Cloud infrastructure.</p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:akshithareddy132@gmail.com" class="contact-method-card">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">akshithareddy132@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+916301108114" class="contact-method-card">
+                                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone</span>
+                                    <span class="method-value">+91 6301108114</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-method-card">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Hyderabad, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <form id="contactForm" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Job Opportunity / Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Hello Akshitha, I'd like to discuss..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Direct Mail
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="brand-logo">
+                    <span class="monogram">&lt;AR/&gt;</span>
+                    <span class="brand-name">Nagulapati Akshitha Reddy</span>
+                </a>
+                <p>Computer Science Engineer & Software Developer</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="assets/resume.pdf" download="Nagulapati_Akshitha_Reddy_Resume.pdf">Resume</a>
+            </div>
+
+            <div class="footer-right">
+                <p>&copy; <span id="currentYear"></span> Nagulapati Akshitha Reddy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
